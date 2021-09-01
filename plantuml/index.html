@@ -234,43 +234,43 @@
 <h2>uml/actor</h2>
 <pre id='vimCodeElement'>
 
-@startuml
+<span class="PreProc">@startuml</span>
 
-actor Alice #green
+<span class="Type">actor</span> Alice #<span class="Constant">green</span>
 
-' a comment this is
+<span class="Comment">' a comment this is</span>
 
-participant Bob
-box &quot;Sweet deal&quot;
-participant &quot;Mr funky foo&quot; as M #EAA
-participant &quot;Mr. Sleepy&quot; as S #AEA
-end box
+<span class="Type">participant</span> Bob
+<span class="Statement">box</span> <span class="Constant">&quot;Sweet deal&quot;</span>
+<span class="Type">participant</span> <span class="Constant">&quot;Mr funky foo&quot;</span> <span class="Statement">as</span> M #EAA
+<span class="Type">participant</span> <span class="Constant">&quot;Mr. Sleepy&quot;</span> <span class="Statement">as</span> S #AEA
+<span class="Statement">end</span> <span class="Statement">box</span>
 
-ref over Alice, Bob: init
+<span class="Statement">ref</span> <span class="Statement">over</span> Alice, Bob: init
 
-== Auth Plot ==
-Alice --&gt; Bob: Authenticaion Request
-Bob   --&gt; Alice: Successful auth
-Bob   --&gt; M: Alice is on
-M     --&gt; Alice: Hello Alice, I am M
-...time passes...
-M --&gt; S: Here is some dough!
-Alice --&gt; Alice: Say, is it breezy?
-activate Alice
-||22||
-Alice --&gt; M: Pleased to meet you,\nNow about Bob...
-||22||
-destroy Alice
-Bob --&gt; M: Woops, Alice was destroyed
-deactivate Bob
-== Revival ==
-activate M
-M -&gt;]: &lt;&lt; createSomeFoo &gt;&gt;
-M &lt;--]: DidMakeSomeFoo
-M --&gt;o Alice: Thou art revived!
-deactivate M
+<span class="Comment">== Auth Plot ==</span>
+Alice <span class="Identifier">--&gt;</span> Bob: Authenticaion Request
+Bob   <span class="Identifier">--&gt;</span> Alice: Successful auth
+Bob   <span class="Identifier">--&gt;</span> M: Alice <span class="Statement">is</span> <span class="Statement">on</span>
+M     <span class="Identifier">--&gt;</span> Alice: Hello Alice, I am M
+<span class="Identifier">...</span><span class="Statement">time passes</span><span class="Identifier">...</span>
+M <span class="Identifier">--&gt;</span> S: Here <span class="Statement">is</span> some dough!
+Alice <span class="Identifier">--&gt;</span> Alice: Say, <span class="Statement">is</span> it breezy?
+<span class="Statement">activate</span> Alice
+<span class="Comment">||22||</span>
+Alice <span class="Identifier">--&gt;</span> M: Pleased <span class="Statement">to</span> meet you,\nNow about Bob...
+<span class="Comment">||22||</span>
+<span class="Statement">destroy</span> Alice
+Bob <span class="Identifier">--&gt;</span> M: Woops, Alice was destroyed
+<span class="Statement">deactivate</span> Bob
+<span class="Comment">== Revival ==</span>
+<span class="Statement">activate</span> M
+M <span class="Identifier">-&gt;]</span>: <span class="Type">&lt;&lt; createSomeFoo &gt;&gt;</span>
+M <span class="Identifier">&lt;--]</span>: DidMakeSomeFoo
+M <span class="Identifier">--&gt;o</span> Alice: Thou art revived!
+<span class="Statement">deactivate</span> M
 
-@enduml
+<span class="PreProc">@enduml</span>
 </pre>
 </td><td>
 <img src="uml/actor.png" />
@@ -280,674 +280,674 @@ deactivate M
 <h2>uml/Arrows_both</h2>
 <pre id='vimCodeElement'>
 
-@startuml
-Bob &lt;-&gt;    Alice
-Bob o&lt;-&gt;   Alice
-Bob x&lt;-&gt;   Alice
-Bob &lt;--&gt;   Alice
-Bob o&lt;--&gt;  Alice
-Bob x&lt;--&gt;  Alice
-Bob &lt;&lt;-&gt;   Alice
-Bob o&lt;&lt;-&gt;  Alice
-Bob x&lt;&lt;-&gt;  Alice
-Bob &lt;&lt;--&gt;  Alice
-Bob o&lt;&lt;--&gt; Alice
-Bob x&lt;&lt;--&gt; Alice
-Bob \-&gt;    Alice
-Bob o\-&gt;   Alice
-Bob x\-&gt;   Alice
-Bob \--&gt;   Alice
-Bob o\--&gt;  Alice
-Bob x\--&gt;  Alice
-Bob \\-&gt;   Alice
-Bob o\\-&gt;  Alice
-Bob x\\-&gt;  Alice
-Bob \\--&gt;  Alice
-Bob o\\--&gt; Alice
-Bob x\\--&gt; Alice
-Bob /-&gt;    Alice
-Bob o/-&gt;   Alice
-Bob x/-&gt;   Alice
-Bob /--&gt;   Alice
-Bob o/--&gt;  Alice
-Bob x/--&gt;  Alice
-Bob //-&gt;   Alice
-Bob o//-&gt;  Alice
-Bob x//-&gt;  Alice
-Bob //--&gt;  Alice
-Bob o//--&gt; Alice
-Bob x//--&gt; Alice
+<span class="PreProc">@startuml</span>
+Bob <span class="Identifier">&lt;-&gt;</span>    Alice
+Bob <span class="Identifier">o&lt;-&gt;</span>   Alice
+Bob <span class="Identifier">x&lt;-&gt;</span>   Alice
+Bob <span class="Identifier">&lt;--&gt;</span>   Alice
+Bob <span class="Identifier">o&lt;--&gt;</span>  Alice
+Bob <span class="Identifier">x&lt;--&gt;</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-&gt;</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-&gt;</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-&gt;</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--&gt;</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--&gt;</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--&gt;</span> Alice
+Bob <span class="Identifier">\-&gt;</span>    Alice
+Bob <span class="Identifier">o\-&gt;</span>   Alice
+Bob <span class="Identifier">x\-&gt;</span>   Alice
+Bob <span class="Identifier">\--&gt;</span>   Alice
+Bob <span class="Identifier">o\--&gt;</span>  Alice
+Bob <span class="Identifier">x\--&gt;</span>  Alice
+Bob <span class="Identifier">\\-&gt;</span>   Alice
+Bob <span class="Identifier">o\\-&gt;</span>  Alice
+Bob <span class="Identifier">x\\-&gt;</span>  Alice
+Bob <span class="Identifier">\\--&gt;</span>  Alice
+Bob <span class="Identifier">o\\--&gt;</span> Alice
+Bob <span class="Identifier">x\\--&gt;</span> Alice
+Bob <span class="Identifier">/-&gt;</span>    Alice
+Bob <span class="Identifier">o/-&gt;</span>   Alice
+Bob <span class="Identifier">x/-&gt;</span>   Alice
+Bob <span class="Identifier">/--&gt;</span>   Alice
+Bob <span class="Identifier">o/--&gt;</span>  Alice
+Bob <span class="Identifier">x/--&gt;</span>  Alice
+Bob <span class="Identifier">//-&gt;</span>   Alice
+Bob <span class="Identifier">o//-&gt;</span>  Alice
+Bob <span class="Identifier">x//-&gt;</span>  Alice
+Bob <span class="Identifier">//--&gt;</span>  Alice
+Bob <span class="Identifier">o//--&gt;</span> Alice
+Bob <span class="Identifier">x//--&gt;</span> Alice
 
-Bob &lt;-&gt;o    Alice
-Bob o&lt;-&gt;o   Alice
-Bob x&lt;-&gt;o   Alice
-Bob &lt;--&gt;o   Alice
-Bob o&lt;--&gt;o  Alice
-Bob x&lt;--&gt;o  Alice
-Bob &lt;&lt;-&gt;o   Alice
-Bob o&lt;&lt;-&gt;o  Alice
-Bob x&lt;&lt;-&gt;o  Alice
-Bob &lt;&lt;--&gt;o  Alice
-Bob o&lt;&lt;--&gt;o Alice
-Bob x&lt;&lt;--&gt;o Alice
-Bob \-&gt;o    Alice
-Bob o\-&gt;o   Alice
-Bob x\-&gt;o   Alice
-Bob \--&gt;o   Alice
-Bob o\--&gt;o  Alice
-Bob x\--&gt;o  Alice
-Bob \\-&gt;o   Alice
-Bob o\\-&gt;o  Alice
-Bob x\\-&gt;o  Alice
-Bob \\--&gt;o  Alice
-Bob o\\--&gt;o Alice
-Bob x\\--&gt;o Alice
-Bob /-&gt;o    Alice
-Bob o/-&gt;o   Alice
-Bob x/-&gt;o   Alice
-Bob /--&gt;o   Alice
-Bob o/--&gt;o  Alice
-Bob x/--&gt;o  Alice
-Bob //-&gt;o   Alice
-Bob o//-&gt;o  Alice
-Bob x//-&gt;o  Alice
-Bob //--&gt;o  Alice
-Bob o//--&gt;o Alice
-Bob x//--&gt;o Alice
+Bob <span class="Identifier">&lt;-&gt;o</span>    Alice
+Bob <span class="Identifier">o&lt;-&gt;o</span>   Alice
+Bob <span class="Identifier">x&lt;-&gt;o</span>   Alice
+Bob <span class="Identifier">&lt;--&gt;o</span>   Alice
+Bob <span class="Identifier">o&lt;--&gt;o</span>  Alice
+Bob <span class="Identifier">x&lt;--&gt;o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-&gt;o</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-&gt;o</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-&gt;o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--&gt;o</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--&gt;o</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--&gt;o</span> Alice
+Bob <span class="Identifier">\-&gt;o</span>    Alice
+Bob <span class="Identifier">o\-&gt;o</span>   Alice
+Bob <span class="Identifier">x\-&gt;o</span>   Alice
+Bob <span class="Identifier">\--&gt;o</span>   Alice
+Bob <span class="Identifier">o\--&gt;o</span>  Alice
+Bob <span class="Identifier">x\--&gt;o</span>  Alice
+Bob <span class="Identifier">\\-&gt;o</span>   Alice
+Bob <span class="Identifier">o\\-&gt;o</span>  Alice
+Bob <span class="Identifier">x\\-&gt;o</span>  Alice
+Bob <span class="Identifier">\\--&gt;o</span>  Alice
+Bob <span class="Identifier">o\\--&gt;o</span> Alice
+Bob <span class="Identifier">x\\--&gt;o</span> Alice
+Bob <span class="Identifier">/-&gt;o</span>    Alice
+Bob <span class="Identifier">o/-&gt;o</span>   Alice
+Bob <span class="Identifier">x/-&gt;o</span>   Alice
+Bob <span class="Identifier">/--&gt;o</span>   Alice
+Bob <span class="Identifier">o/--&gt;o</span>  Alice
+Bob <span class="Identifier">x/--&gt;o</span>  Alice
+Bob <span class="Identifier">//-&gt;o</span>   Alice
+Bob <span class="Identifier">o//-&gt;o</span>  Alice
+Bob <span class="Identifier">x//-&gt;o</span>  Alice
+Bob <span class="Identifier">//--&gt;o</span>  Alice
+Bob <span class="Identifier">o//--&gt;o</span> Alice
+Bob <span class="Identifier">x//--&gt;o</span> Alice
 
-Bob &lt;-&gt;x    Alice
-Bob o&lt;-&gt;x   Alice
-Bob x&lt;-&gt;x   Alice
-Bob &lt;--&gt;x   Alice
-Bob o&lt;--&gt;x  Alice
-Bob x&lt;--&gt;x  Alice
-Bob &lt;&lt;-&gt;x   Alice
-Bob o&lt;&lt;-&gt;x  Alice
-Bob x&lt;&lt;-&gt;x  Alice
-Bob &lt;&lt;--&gt;x  Alice
-Bob o&lt;&lt;--&gt;x Alice
-Bob x&lt;&lt;--&gt;x Alice
-Bob \-&gt;x    Alice
-Bob o\-&gt;x   Alice
-Bob x\-&gt;x   Alice
-Bob \--&gt;x   Alice
-Bob o\--&gt;x  Alice
-Bob x\--&gt;x  Alice
-Bob \\-&gt;x   Alice
-Bob o\\-&gt;x  Alice
-Bob x\\-&gt;x  Alice
-Bob \\--&gt;x  Alice
-Bob o\\--&gt;x Alice
-Bob x\\--&gt;x Alice
-Bob /-&gt;x    Alice
-Bob o/-&gt;x   Alice
-Bob x/-&gt;x   Alice
-Bob /--&gt;x   Alice
-Bob o/--&gt;x  Alice
-Bob x/--&gt;x  Alice
-Bob //-&gt;x   Alice
-Bob o//-&gt;x  Alice
-Bob x//-&gt;x  Alice
-Bob //--&gt;x  Alice
-Bob o//--&gt;x Alice
-Bob x//--&gt;x Alice
+Bob <span class="Identifier">&lt;-&gt;x</span>    Alice
+Bob <span class="Identifier">o&lt;-&gt;x</span>   Alice
+Bob <span class="Identifier">x&lt;-&gt;x</span>   Alice
+Bob <span class="Identifier">&lt;--&gt;x</span>   Alice
+Bob <span class="Identifier">o&lt;--&gt;x</span>  Alice
+Bob <span class="Identifier">x&lt;--&gt;x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-&gt;x</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-&gt;x</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-&gt;x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--&gt;x</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--&gt;x</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--&gt;x</span> Alice
+Bob <span class="Identifier">\-&gt;x</span>    Alice
+Bob <span class="Identifier">o\-&gt;x</span>   Alice
+Bob <span class="Identifier">x\-&gt;x</span>   Alice
+Bob <span class="Identifier">\--&gt;x</span>   Alice
+Bob <span class="Identifier">o\--&gt;x</span>  Alice
+Bob <span class="Identifier">x\--&gt;x</span>  Alice
+Bob <span class="Identifier">\\-&gt;x</span>   Alice
+Bob <span class="Identifier">o\\-&gt;x</span>  Alice
+Bob <span class="Identifier">x\\-&gt;x</span>  Alice
+Bob <span class="Identifier">\\--&gt;x</span>  Alice
+Bob <span class="Identifier">o\\--&gt;x</span> Alice
+Bob <span class="Identifier">x\\--&gt;x</span> Alice
+Bob <span class="Identifier">/-&gt;x</span>    Alice
+Bob <span class="Identifier">o/-&gt;x</span>   Alice
+Bob <span class="Identifier">x/-&gt;x</span>   Alice
+Bob <span class="Identifier">/--&gt;x</span>   Alice
+Bob <span class="Identifier">o/--&gt;x</span>  Alice
+Bob <span class="Identifier">x/--&gt;x</span>  Alice
+Bob <span class="Identifier">//-&gt;x</span>   Alice
+Bob <span class="Identifier">o//-&gt;x</span>  Alice
+Bob <span class="Identifier">x//-&gt;x</span>  Alice
+Bob <span class="Identifier">//--&gt;x</span>  Alice
+Bob <span class="Identifier">o//--&gt;x</span> Alice
+Bob <span class="Identifier">x//--&gt;x</span> Alice
 
-Bob &lt;-&gt;&gt;    Alice
-Bob o&lt;-&gt;&gt;   Alice
-Bob x&lt;-&gt;&gt;   Alice
-Bob &lt;--&gt;&gt;   Alice
-Bob o&lt;--&gt;&gt;  Alice
-Bob x&lt;--&gt;&gt;  Alice
-Bob &lt;&lt;-&gt;&gt;   Alice
-Bob o&lt;&lt;-&gt;&gt;  Alice
-Bob x&lt;&lt;-&gt;&gt;  Alice
-Bob &lt;&lt;--&gt;&gt;  Alice
-Bob o&lt;&lt;--&gt;&gt; Alice
-Bob x&lt;&lt;--&gt;&gt; Alice
-Bob \-&gt;&gt;    Alice
-Bob o\-&gt;&gt;   Alice
-Bob x\-&gt;&gt;   Alice
-Bob \--&gt;&gt;   Alice
-Bob o\--&gt;&gt;  Alice
-Bob x\--&gt;&gt;  Alice
-Bob \\-&gt;&gt;   Alice
-Bob o\\-&gt;&gt;  Alice
-Bob x\\-&gt;&gt;  Alice
-Bob \\--&gt;&gt;  Alice
-Bob o\\--&gt;&gt; Alice
-Bob x\\--&gt;&gt; Alice
-Bob /-&gt;&gt;    Alice
-Bob o/-&gt;&gt;   Alice
-Bob x/-&gt;&gt;   Alice
-Bob /--&gt;&gt;   Alice
-Bob o/--&gt;&gt;  Alice
-Bob x/--&gt;&gt;  Alice
-Bob //-&gt;&gt;   Alice
-Bob o//-&gt;&gt;  Alice
-Bob x//-&gt;&gt;  Alice
-Bob //--&gt;&gt;  Alice
-Bob o//--&gt;&gt; Alice
-Bob x//--&gt;&gt; Alice
+Bob <span class="Identifier">&lt;-&gt;&gt;</span>    Alice
+Bob <span class="Identifier">o&lt;-&gt;&gt;</span>   Alice
+Bob <span class="Identifier">x&lt;-&gt;&gt;</span>   Alice
+Bob <span class="Identifier">&lt;--&gt;&gt;</span>   Alice
+Bob <span class="Identifier">o&lt;--&gt;&gt;</span>  Alice
+Bob <span class="Identifier">x&lt;--&gt;&gt;</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-&gt;&gt;</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-&gt;&gt;</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-&gt;&gt;</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--&gt;&gt;</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--&gt;&gt;</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--&gt;&gt;</span> Alice
+Bob <span class="Identifier">\-&gt;&gt;</span>    Alice
+Bob <span class="Identifier">o\-&gt;&gt;</span>   Alice
+Bob <span class="Identifier">x\-&gt;&gt;</span>   Alice
+Bob <span class="Identifier">\--&gt;&gt;</span>   Alice
+Bob <span class="Identifier">o\--&gt;&gt;</span>  Alice
+Bob <span class="Identifier">x\--&gt;&gt;</span>  Alice
+Bob <span class="Identifier">\\-&gt;&gt;</span>   Alice
+Bob <span class="Identifier">o\\-&gt;&gt;</span>  Alice
+Bob <span class="Identifier">x\\-&gt;&gt;</span>  Alice
+Bob <span class="Identifier">\\--&gt;&gt;</span>  Alice
+Bob <span class="Identifier">o\\--&gt;&gt;</span> Alice
+Bob <span class="Identifier">x\\--&gt;&gt;</span> Alice
+Bob <span class="Identifier">/-&gt;&gt;</span>    Alice
+Bob <span class="Identifier">o/-&gt;&gt;</span>   Alice
+Bob <span class="Identifier">x/-&gt;&gt;</span>   Alice
+Bob <span class="Identifier">/--&gt;&gt;</span>   Alice
+Bob <span class="Identifier">o/--&gt;&gt;</span>  Alice
+Bob <span class="Identifier">x/--&gt;&gt;</span>  Alice
+Bob <span class="Identifier">//-&gt;&gt;</span>   Alice
+Bob <span class="Identifier">o//-&gt;&gt;</span>  Alice
+Bob <span class="Identifier">x//-&gt;&gt;</span>  Alice
+Bob <span class="Identifier">//--&gt;&gt;</span>  Alice
+Bob <span class="Identifier">o//--&gt;&gt;</span> Alice
+Bob <span class="Identifier">x//--&gt;&gt;</span> Alice
 
-Bob &lt;-&gt;&gt;o    Alice
-Bob o&lt;-&gt;&gt;o   Alice
-Bob x&lt;-&gt;&gt;o   Alice
-Bob &lt;--&gt;&gt;o   Alice
-Bob o&lt;--&gt;&gt;o  Alice
-Bob x&lt;--&gt;&gt;o  Alice
-Bob &lt;&lt;-&gt;&gt;o   Alice
-Bob o&lt;&lt;-&gt;&gt;o  Alice
-Bob x&lt;&lt;-&gt;&gt;o  Alice
-Bob &lt;&lt;--&gt;&gt;o  Alice
-Bob o&lt;&lt;--&gt;&gt;o Alice
-Bob x&lt;&lt;--&gt;&gt;o Alice
-Bob \-&gt;&gt;o    Alice
-Bob o\-&gt;&gt;o   Alice
-Bob x\-&gt;&gt;o   Alice
-Bob \--&gt;&gt;o   Alice
-Bob o\--&gt;&gt;o  Alice
-Bob x\--&gt;&gt;o  Alice
-Bob \\-&gt;&gt;o   Alice
-Bob o\\-&gt;&gt;o  Alice
-Bob x\\-&gt;&gt;o  Alice
-Bob \\--&gt;&gt;o  Alice
-Bob o\\--&gt;&gt;o Alice
-Bob x\\--&gt;&gt;o Alice
-Bob /-&gt;&gt;o    Alice
-Bob o/-&gt;&gt;o   Alice
-Bob x/-&gt;&gt;o   Alice
-Bob /--&gt;&gt;o   Alice
-Bob o/--&gt;&gt;o  Alice
-Bob x/--&gt;&gt;o  Alice
-Bob //-&gt;&gt;o   Alice
-Bob o//-&gt;&gt;o  Alice
-Bob x//-&gt;&gt;o  Alice
-Bob //--&gt;&gt;o  Alice
-Bob o//--&gt;&gt;o Alice
-Bob x//--&gt;&gt;o Alice
+Bob <span class="Identifier">&lt;-&gt;&gt;o</span>    Alice
+Bob <span class="Identifier">o&lt;-&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">x&lt;-&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">&lt;--&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">o&lt;--&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">x&lt;--&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--&gt;&gt;o</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--&gt;&gt;o</span> Alice
+Bob <span class="Identifier">\-&gt;&gt;o</span>    Alice
+Bob <span class="Identifier">o\-&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">x\-&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">\--&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">o\--&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">x\--&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">\\-&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">o\\-&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">x\\-&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">\\--&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">o\\--&gt;&gt;o</span> Alice
+Bob <span class="Identifier">x\\--&gt;&gt;o</span> Alice
+Bob <span class="Identifier">/-&gt;&gt;o</span>    Alice
+Bob <span class="Identifier">o/-&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">x/-&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">/--&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">o/--&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">x/--&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">//-&gt;&gt;o</span>   Alice
+Bob <span class="Identifier">o//-&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">x//-&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">//--&gt;&gt;o</span>  Alice
+Bob <span class="Identifier">o//--&gt;&gt;o</span> Alice
+Bob <span class="Identifier">x//--&gt;&gt;o</span> Alice
 
-Bob &lt;-&gt;&gt;x    Alice
-Bob o&lt;-&gt;&gt;x   Alice
-Bob x&lt;-&gt;&gt;x   Alice
-Bob &lt;--&gt;&gt;x   Alice
-Bob o&lt;--&gt;&gt;x  Alice
-Bob x&lt;--&gt;&gt;x  Alice
-Bob &lt;&lt;-&gt;&gt;x   Alice
-Bob o&lt;&lt;-&gt;&gt;x  Alice
-Bob x&lt;&lt;-&gt;&gt;x  Alice
-Bob &lt;&lt;--&gt;&gt;x  Alice
-Bob o&lt;&lt;--&gt;&gt;x Alice
-Bob x&lt;&lt;--&gt;&gt;x Alice
-Bob \-&gt;&gt;x    Alice
-Bob o\-&gt;&gt;x   Alice
-Bob x\-&gt;&gt;x   Alice
-Bob \--&gt;&gt;x   Alice
-Bob o\--&gt;&gt;x  Alice
-Bob x\--&gt;&gt;x  Alice
-Bob \\-&gt;&gt;x   Alice
-Bob o\\-&gt;&gt;x  Alice
-Bob x\\-&gt;&gt;x  Alice
-Bob \\--&gt;&gt;x  Alice
-Bob o\\--&gt;&gt;x Alice
-Bob x\\--&gt;&gt;x Alice
-Bob /-&gt;&gt;x    Alice
-Bob o/-&gt;&gt;x   Alice
-Bob x/-&gt;&gt;x   Alice
-Bob /--&gt;&gt;x   Alice
-Bob o/--&gt;&gt;x  Alice
-Bob x/--&gt;&gt;x  Alice
-Bob //-&gt;&gt;x   Alice
-Bob o//-&gt;&gt;x  Alice
-Bob x//-&gt;&gt;x  Alice
-Bob //--&gt;&gt;x  Alice
-Bob o//--&gt;&gt;x Alice
-Bob x//--&gt;&gt;x Alice
+Bob <span class="Identifier">&lt;-&gt;&gt;x</span>    Alice
+Bob <span class="Identifier">o&lt;-&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">x&lt;-&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">&lt;--&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">o&lt;--&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">x&lt;--&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--&gt;&gt;x</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--&gt;&gt;x</span> Alice
+Bob <span class="Identifier">\-&gt;&gt;x</span>    Alice
+Bob <span class="Identifier">o\-&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">x\-&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">\--&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">o\--&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">x\--&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">\\-&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">o\\-&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">x\\-&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">\\--&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">o\\--&gt;&gt;x</span> Alice
+Bob <span class="Identifier">x\\--&gt;&gt;x</span> Alice
+Bob <span class="Identifier">/-&gt;&gt;x</span>    Alice
+Bob <span class="Identifier">o/-&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">x/-&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">/--&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">o/--&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">x/--&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">//-&gt;&gt;x</span>   Alice
+Bob <span class="Identifier">o//-&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">x//-&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">//--&gt;&gt;x</span>  Alice
+Bob <span class="Identifier">o//--&gt;&gt;x</span> Alice
+Bob <span class="Identifier">x//--&gt;&gt;x</span> Alice
 
-Bob &lt;-\    Alice
-Bob o&lt;-\   Alice
-Bob x&lt;-\   Alice
-Bob &lt;--\   Alice
-Bob o&lt;--\  Alice
-Bob x&lt;--\  Alice
-Bob &lt;&lt;-\   Alice
-Bob o&lt;&lt;-\  Alice
-Bob x&lt;&lt;-\  Alice
-Bob &lt;&lt;--\  Alice
-Bob o&lt;&lt;--\ Alice
-Bob x&lt;&lt;--\ Alice
-Bob \-\    Alice
-Bob o\-\   Alice
-Bob x\-\   Alice
-Bob \--\   Alice
-Bob o\--\  Alice
-Bob x\--\  Alice
-Bob \\-\   Alice
-Bob o\\-\  Alice
-Bob x\\-\  Alice
-Bob \\--\  Alice
-Bob o\\--\ Alice
-Bob x\\--\ Alice
-Bob /-\    Alice
-Bob o/-\   Alice
-Bob x/-\   Alice
-Bob /--\   Alice
-Bob o/--\  Alice
-Bob x/--\  Alice
-Bob //-\   Alice
-Bob o//-\  Alice
-Bob x//-\  Alice
-Bob //--\  Alice
-Bob o//--\ Alice
-Bob x//--\ Alice
+Bob <span class="Identifier">&lt;-\</span>    Alice
+Bob <span class="Identifier">o&lt;-\</span>   Alice
+Bob <span class="Identifier">x&lt;-\</span>   Alice
+Bob <span class="Identifier">&lt;--\</span>   Alice
+Bob <span class="Identifier">o&lt;--\</span>  Alice
+Bob <span class="Identifier">x&lt;--\</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-\</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-\</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-\</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--\</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--\</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--\</span> Alice
+Bob <span class="Identifier">\-\</span>    Alice
+Bob <span class="Identifier">o\-\</span>   Alice
+Bob <span class="Identifier">x\-\</span>   Alice
+Bob <span class="Identifier">\--\</span>   Alice
+Bob <span class="Identifier">o\--\</span>  Alice
+Bob <span class="Identifier">x\--\</span>  Alice
+Bob <span class="Identifier">\\-\</span>   Alice
+Bob <span class="Identifier">o\\-\</span>  Alice
+Bob <span class="Identifier">x\\-\</span>  Alice
+Bob <span class="Identifier">\\--\</span>  Alice
+Bob <span class="Identifier">o\\--\</span> Alice
+Bob <span class="Identifier">x\\--\</span> Alice
+Bob <span class="Identifier">/-\</span>    Alice
+Bob <span class="Identifier">o/-\</span>   Alice
+Bob <span class="Identifier">x/-\</span>   Alice
+Bob <span class="Identifier">/--\</span>   Alice
+Bob <span class="Identifier">o/--\</span>  Alice
+Bob <span class="Identifier">x/--\</span>  Alice
+Bob <span class="Identifier">//-\</span>   Alice
+Bob <span class="Identifier">o//-\</span>  Alice
+Bob <span class="Identifier">x//-\</span>  Alice
+Bob <span class="Identifier">//--\</span>  Alice
+Bob <span class="Identifier">o//--\</span> Alice
+Bob <span class="Identifier">x//--\</span> Alice
 
-Bob &lt;-\o    Alice
-Bob o&lt;-\o   Alice
-Bob x&lt;-\o   Alice
-Bob &lt;--\o   Alice
-Bob o&lt;--\o  Alice
-Bob x&lt;--\o  Alice
-Bob &lt;&lt;-\o   Alice
-Bob o&lt;&lt;-\o  Alice
-Bob x&lt;&lt;-\o  Alice
-Bob &lt;&lt;--\o  Alice
-Bob o&lt;&lt;--\o Alice
-Bob x&lt;&lt;--\o Alice
-Bob \-\o    Alice
-Bob o\-\o   Alice
-Bob x\-\o   Alice
-Bob \--\o   Alice
-Bob o\--\o  Alice
-Bob x\--\o  Alice
-Bob \\-\o   Alice
-Bob o\\-\o  Alice
-Bob x\\-\o  Alice
-Bob \\--\o  Alice
-Bob o\\--\o Alice
-Bob x\\--\o Alice
-Bob /-\o    Alice
-Bob o/-\o   Alice
-Bob x/-\o   Alice
-Bob /--\o   Alice
-Bob o/--\o  Alice
-Bob x/--\o  Alice
-Bob //-\o   Alice
-Bob o//-\o  Alice
-Bob x//-\o  Alice
-Bob //--\o  Alice
-Bob o//--\o Alice
-Bob x//--\o Alice
+Bob <span class="Identifier">&lt;-\o</span>    Alice
+Bob <span class="Identifier">o&lt;-\o</span>   Alice
+Bob <span class="Identifier">x&lt;-\o</span>   Alice
+Bob <span class="Identifier">&lt;--\o</span>   Alice
+Bob <span class="Identifier">o&lt;--\o</span>  Alice
+Bob <span class="Identifier">x&lt;--\o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-\o</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-\o</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-\o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--\o</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--\o</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--\o</span> Alice
+Bob <span class="Identifier">\-\o</span>    Alice
+Bob <span class="Identifier">o\-\o</span>   Alice
+Bob <span class="Identifier">x\-\o</span>   Alice
+Bob <span class="Identifier">\--\o</span>   Alice
+Bob <span class="Identifier">o\--\o</span>  Alice
+Bob <span class="Identifier">x\--\o</span>  Alice
+Bob <span class="Identifier">\\-\o</span>   Alice
+Bob <span class="Identifier">o\\-\o</span>  Alice
+Bob <span class="Identifier">x\\-\o</span>  Alice
+Bob <span class="Identifier">\\--\o</span>  Alice
+Bob <span class="Identifier">o\\--\o</span> Alice
+Bob <span class="Identifier">x\\--\o</span> Alice
+Bob <span class="Identifier">/-\o</span>    Alice
+Bob <span class="Identifier">o/-\o</span>   Alice
+Bob <span class="Identifier">x/-\o</span>   Alice
+Bob <span class="Identifier">/--\o</span>   Alice
+Bob <span class="Identifier">o/--\o</span>  Alice
+Bob <span class="Identifier">x/--\o</span>  Alice
+Bob <span class="Identifier">//-\o</span>   Alice
+Bob <span class="Identifier">o//-\o</span>  Alice
+Bob <span class="Identifier">x//-\o</span>  Alice
+Bob <span class="Identifier">//--\o</span>  Alice
+Bob <span class="Identifier">o//--\o</span> Alice
+Bob <span class="Identifier">x//--\o</span> Alice
 
-Bob &lt;-\x    Alice
-Bob o&lt;-\x   Alice
-Bob x&lt;-\x   Alice
-Bob &lt;--\x   Alice
-Bob o&lt;--\x  Alice
-Bob x&lt;--\x  Alice
-Bob &lt;&lt;-\x   Alice
-Bob o&lt;&lt;-\x  Alice
-Bob x&lt;&lt;-\x  Alice
-Bob &lt;&lt;--\x  Alice
-Bob o&lt;&lt;--\x Alice
-Bob x&lt;&lt;--\x Alice
-Bob \-\x    Alice
-Bob o\-\x   Alice
-Bob x\-\x   Alice
-Bob \--\x   Alice
-Bob o\--\x  Alice
-Bob x\--\x  Alice
-Bob \\-\x   Alice
-Bob o\\-\x  Alice
-Bob x\\-\x  Alice
-Bob \\--\x  Alice
-Bob o\\--\x Alice
-Bob x\\--\x Alice
-Bob /-\x    Alice
-Bob o/-\x   Alice
-Bob x/-\x   Alice
-Bob /--\x   Alice
-Bob o/--\x  Alice
-Bob x/--\x  Alice
-Bob //-\x   Alice
-Bob o//-\x  Alice
-Bob x//-\x  Alice
-Bob //--\x  Alice
-Bob o//--\x Alice
-Bob x//--\x Alice
+Bob <span class="Identifier">&lt;-\x</span>    Alice
+Bob <span class="Identifier">o&lt;-\x</span>   Alice
+Bob <span class="Identifier">x&lt;-\x</span>   Alice
+Bob <span class="Identifier">&lt;--\x</span>   Alice
+Bob <span class="Identifier">o&lt;--\x</span>  Alice
+Bob <span class="Identifier">x&lt;--\x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-\x</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-\x</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-\x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--\x</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--\x</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--\x</span> Alice
+Bob <span class="Identifier">\-\x</span>    Alice
+Bob <span class="Identifier">o\-\x</span>   Alice
+Bob <span class="Identifier">x\-\x</span>   Alice
+Bob <span class="Identifier">\--\x</span>   Alice
+Bob <span class="Identifier">o\--\x</span>  Alice
+Bob <span class="Identifier">x\--\x</span>  Alice
+Bob <span class="Identifier">\\-\x</span>   Alice
+Bob <span class="Identifier">o\\-\x</span>  Alice
+Bob <span class="Identifier">x\\-\x</span>  Alice
+Bob <span class="Identifier">\\--\x</span>  Alice
+Bob <span class="Identifier">o\\--\x</span> Alice
+Bob <span class="Identifier">x\\--\x</span> Alice
+Bob <span class="Identifier">/-\x</span>    Alice
+Bob <span class="Identifier">o/-\x</span>   Alice
+Bob <span class="Identifier">x/-\x</span>   Alice
+Bob <span class="Identifier">/--\x</span>   Alice
+Bob <span class="Identifier">o/--\x</span>  Alice
+Bob <span class="Identifier">x/--\x</span>  Alice
+Bob <span class="Identifier">//-\x</span>   Alice
+Bob <span class="Identifier">o//-\x</span>  Alice
+Bob <span class="Identifier">x//-\x</span>  Alice
+Bob <span class="Identifier">//--\x</span>  Alice
+Bob <span class="Identifier">o//--\x</span> Alice
+Bob <span class="Identifier">x//--\x</span> Alice
 
-Bob &lt;-\\    Alice
-Bob o&lt;-\\   Alice
-Bob x&lt;-\\   Alice
-Bob &lt;--\\   Alice
-Bob o&lt;--\\  Alice
-Bob x&lt;--\\  Alice
-Bob &lt;&lt;-\\   Alice
-Bob o&lt;&lt;-\\  Alice
-Bob x&lt;&lt;-\\  Alice
-Bob &lt;&lt;--\\  Alice
-Bob o&lt;&lt;--\\ Alice
-Bob x&lt;&lt;--\\ Alice
-Bob \-\\    Alice
-Bob o\-\\   Alice
-Bob x\-\\   Alice
-Bob \--\\   Alice
-Bob o\--\\  Alice
-Bob x\--\\  Alice
-Bob \\-\\   Alice
-Bob o\\-\\  Alice
-Bob x\\-\\  Alice
-Bob \\--\\  Alice
-Bob o\\--\\ Alice
-Bob x\\--\\ Alice
-Bob /-\\    Alice
-Bob o/-\\   Alice
-Bob x/-\\   Alice
-Bob /--\\   Alice
-Bob o/--\\  Alice
-Bob x/--\\  Alice
-Bob //-\\   Alice
-Bob o//-\\  Alice
-Bob x//-\\  Alice
-Bob //--\\  Alice
-Bob o//--\\ Alice
-Bob x//--\\ Alice
+Bob <span class="Identifier">&lt;-\\</span>    Alice
+Bob <span class="Identifier">o&lt;-\\</span>   Alice
+Bob <span class="Identifier">x&lt;-\\</span>   Alice
+Bob <span class="Identifier">&lt;--\\</span>   Alice
+Bob <span class="Identifier">o&lt;--\\</span>  Alice
+Bob <span class="Identifier">x&lt;--\\</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-\\</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-\\</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-\\</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--\\</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--\\</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--\\</span> Alice
+Bob <span class="Identifier">\-\\</span>    Alice
+Bob <span class="Identifier">o\-\\</span>   Alice
+Bob <span class="Identifier">x\-\\</span>   Alice
+Bob <span class="Identifier">\--\\</span>   Alice
+Bob <span class="Identifier">o\--\\</span>  Alice
+Bob <span class="Identifier">x\--\\</span>  Alice
+Bob <span class="Identifier">\\-\\</span>   Alice
+Bob <span class="Identifier">o\\-\\</span>  Alice
+Bob <span class="Identifier">x\\-\\</span>  Alice
+Bob <span class="Identifier">\\--\\</span>  Alice
+Bob <span class="Identifier">o\\--\\</span> Alice
+Bob <span class="Identifier">x\\--\\</span> Alice
+Bob <span class="Identifier">/-\\</span>    Alice
+Bob <span class="Identifier">o/-\\</span>   Alice
+Bob <span class="Identifier">x/-\\</span>   Alice
+Bob <span class="Identifier">/--\\</span>   Alice
+Bob <span class="Identifier">o/--\\</span>  Alice
+Bob <span class="Identifier">x/--\\</span>  Alice
+Bob <span class="Identifier">//-\\</span>   Alice
+Bob <span class="Identifier">o//-\\</span>  Alice
+Bob <span class="Identifier">x//-\\</span>  Alice
+Bob <span class="Identifier">//--\\</span>  Alice
+Bob <span class="Identifier">o//--\\</span> Alice
+Bob <span class="Identifier">x//--\\</span> Alice
 
-Bob &lt;-\\o    Alice
-Bob o&lt;-\\o   Alice
-Bob x&lt;-\\o   Alice
-Bob &lt;--\\o   Alice
-Bob o&lt;--\\o  Alice
-Bob x&lt;--\\o  Alice
-Bob &lt;&lt;-\\o   Alice
-Bob o&lt;&lt;-\\o  Alice
-Bob x&lt;&lt;-\\o  Alice
-Bob &lt;&lt;--\\o  Alice
-Bob o&lt;&lt;--\\o Alice
-Bob x&lt;&lt;--\\o Alice
-Bob \-\\o    Alice
-Bob o\-\\o   Alice
-Bob x\-\\o   Alice
-Bob \--\\o   Alice
-Bob o\--\\o  Alice
-Bob x\--\\o  Alice
-Bob \\-\\o   Alice
-Bob o\\-\\o  Alice
-Bob x\\-\\o  Alice
-Bob \\--\\o  Alice
-Bob o\\--\\o Alice
-Bob x\\--\\o Alice
-Bob /-\\o    Alice
-Bob o/-\\o   Alice
-Bob x/-\\o   Alice
-Bob /--\\o   Alice
-Bob o/--\\o  Alice
-Bob x/--\\o  Alice
-Bob //-\\o   Alice
-Bob o//-\\o  Alice
-Bob x//-\\o  Alice
-Bob //--\\o  Alice
-Bob o//--\\o Alice
-Bob x//--\\o Alice
+Bob <span class="Identifier">&lt;-\\o</span>    Alice
+Bob <span class="Identifier">o&lt;-\\o</span>   Alice
+Bob <span class="Identifier">x&lt;-\\o</span>   Alice
+Bob <span class="Identifier">&lt;--\\o</span>   Alice
+Bob <span class="Identifier">o&lt;--\\o</span>  Alice
+Bob <span class="Identifier">x&lt;--\\o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-\\o</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-\\o</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-\\o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--\\o</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--\\o</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--\\o</span> Alice
+Bob <span class="Identifier">\-\\o</span>    Alice
+Bob <span class="Identifier">o\-\\o</span>   Alice
+Bob <span class="Identifier">x\-\\o</span>   Alice
+Bob <span class="Identifier">\--\\o</span>   Alice
+Bob <span class="Identifier">o\--\\o</span>  Alice
+Bob <span class="Identifier">x\--\\o</span>  Alice
+Bob <span class="Identifier">\\-\\o</span>   Alice
+Bob <span class="Identifier">o\\-\\o</span>  Alice
+Bob <span class="Identifier">x\\-\\o</span>  Alice
+Bob <span class="Identifier">\\--\\o</span>  Alice
+Bob <span class="Identifier">o\\--\\o</span> Alice
+Bob <span class="Identifier">x\\--\\o</span> Alice
+Bob <span class="Identifier">/-\\o</span>    Alice
+Bob <span class="Identifier">o/-\\o</span>   Alice
+Bob <span class="Identifier">x/-\\o</span>   Alice
+Bob <span class="Identifier">/--\\o</span>   Alice
+Bob <span class="Identifier">o/--\\o</span>  Alice
+Bob <span class="Identifier">x/--\\o</span>  Alice
+Bob <span class="Identifier">//-\\o</span>   Alice
+Bob <span class="Identifier">o//-\\o</span>  Alice
+Bob <span class="Identifier">x//-\\o</span>  Alice
+Bob <span class="Identifier">//--\\o</span>  Alice
+Bob <span class="Identifier">o//--\\o</span> Alice
+Bob <span class="Identifier">x//--\\o</span> Alice
 
-Bob &lt;-\\x    Alice
-Bob o&lt;-\\x   Alice
-Bob x&lt;-\\x   Alice
-Bob &lt;--\\x   Alice
-Bob o&lt;--\\x  Alice
-Bob x&lt;--\\x  Alice
-Bob &lt;&lt;-\\x   Alice
-Bob o&lt;&lt;-\\x  Alice
-Bob x&lt;&lt;-\\x  Alice
-Bob &lt;&lt;--\\x  Alice
-Bob o&lt;&lt;--\\x Alice
-Bob x&lt;&lt;--\\x Alice
-Bob \-\\x    Alice
-Bob o\-\\x   Alice
-Bob x\-\\x   Alice
-Bob \--\\x   Alice
-Bob o\--\\x  Alice
-Bob x\--\\x  Alice
-Bob \\-\\x   Alice
-Bob o\\-\\x  Alice
-Bob x\\-\\x  Alice
-Bob \\--\\x  Alice
-Bob o\\--\\x Alice
-Bob x\\--\\x Alice
-Bob /-\\x    Alice
-Bob o/-\\x   Alice
-Bob x/-\\x   Alice
-Bob /--\\x   Alice
-Bob o/--\\x  Alice
-Bob x/--\\x  Alice
-Bob //-\\x   Alice
-Bob o//-\\x  Alice
-Bob x//-\\x  Alice
-Bob //--\\x  Alice
-Bob o//--\\x Alice
-Bob x//--\\x Alice
+Bob <span class="Identifier">&lt;-\\x</span>    Alice
+Bob <span class="Identifier">o&lt;-\\x</span>   Alice
+Bob <span class="Identifier">x&lt;-\\x</span>   Alice
+Bob <span class="Identifier">&lt;--\\x</span>   Alice
+Bob <span class="Identifier">o&lt;--\\x</span>  Alice
+Bob <span class="Identifier">x&lt;--\\x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-\\x</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-\\x</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-\\x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--\\x</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--\\x</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--\\x</span> Alice
+Bob <span class="Identifier">\-\\x</span>    Alice
+Bob <span class="Identifier">o\-\\x</span>   Alice
+Bob <span class="Identifier">x\-\\x</span>   Alice
+Bob <span class="Identifier">\--\\x</span>   Alice
+Bob <span class="Identifier">o\--\\x</span>  Alice
+Bob <span class="Identifier">x\--\\x</span>  Alice
+Bob <span class="Identifier">\\-\\x</span>   Alice
+Bob <span class="Identifier">o\\-\\x</span>  Alice
+Bob <span class="Identifier">x\\-\\x</span>  Alice
+Bob <span class="Identifier">\\--\\x</span>  Alice
+Bob <span class="Identifier">o\\--\\x</span> Alice
+Bob <span class="Identifier">x\\--\\x</span> Alice
+Bob <span class="Identifier">/-\\x</span>    Alice
+Bob <span class="Identifier">o/-\\x</span>   Alice
+Bob <span class="Identifier">x/-\\x</span>   Alice
+Bob <span class="Identifier">/--\\x</span>   Alice
+Bob <span class="Identifier">o/--\\x</span>  Alice
+Bob <span class="Identifier">x/--\\x</span>  Alice
+Bob <span class="Identifier">//-\\x</span>   Alice
+Bob <span class="Identifier">o//-\\x</span>  Alice
+Bob <span class="Identifier">x//-\\x</span>  Alice
+Bob <span class="Identifier">//--\\x</span>  Alice
+Bob <span class="Identifier">o//--\\x</span> Alice
+Bob <span class="Identifier">x//--\\x</span> Alice
 
-Bob &lt;-/    Alice
-Bob o&lt;-/   Alice
-Bob x&lt;-/   Alice
-Bob &lt;--/   Alice
-Bob o&lt;--/  Alice
-Bob x&lt;--/  Alice
-Bob &lt;&lt;-/   Alice
-Bob o&lt;&lt;-/  Alice
-Bob x&lt;&lt;-/  Alice
-Bob &lt;&lt;--/  Alice
-Bob o&lt;&lt;--/ Alice
-Bob x&lt;&lt;--/ Alice
-Bob \-/    Alice
-Bob o\-/   Alice
-Bob x\-/   Alice
-Bob \--/   Alice
-Bob o\--/  Alice
-Bob x\--/  Alice
-Bob \\-/   Alice
-Bob o\\-/  Alice
-Bob x\\-/  Alice
-Bob \\--/  Alice
-Bob o\\--/ Alice
-Bob x\\--/ Alice
-Bob /-/    Alice
-Bob o/-/   Alice
-Bob x/-/   Alice
-Bob /--/   Alice
-Bob o/--/  Alice
-Bob x/--/  Alice
-Bob //-/   Alice
-Bob o//-/  Alice
-Bob x//-/  Alice
-Bob //--/  Alice
-Bob o//--/ Alice
-Bob x//--/ Alice
+Bob <span class="Identifier">&lt;-/</span>    Alice
+Bob <span class="Identifier">o&lt;-/</span>   Alice
+Bob <span class="Identifier">x&lt;-/</span>   Alice
+Bob <span class="Identifier">&lt;--/</span>   Alice
+Bob <span class="Identifier">o&lt;--/</span>  Alice
+Bob <span class="Identifier">x&lt;--/</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-/</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-/</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-/</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--/</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--/</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--/</span> Alice
+Bob <span class="Identifier">\-/</span>    Alice
+Bob <span class="Identifier">o\-/</span>   Alice
+Bob <span class="Identifier">x\-/</span>   Alice
+Bob <span class="Identifier">\--/</span>   Alice
+Bob <span class="Identifier">o\--/</span>  Alice
+Bob <span class="Identifier">x\--/</span>  Alice
+Bob <span class="Identifier">\\-/</span>   Alice
+Bob <span class="Identifier">o\\-/</span>  Alice
+Bob <span class="Identifier">x\\-/</span>  Alice
+Bob <span class="Identifier">\\--/</span>  Alice
+Bob <span class="Identifier">o\\--/</span> Alice
+Bob <span class="Identifier">x\\--/</span> Alice
+Bob <span class="Identifier">/-/</span>    Alice
+Bob <span class="Identifier">o/-/</span>   Alice
+Bob <span class="Identifier">x/-/</span>   Alice
+Bob <span class="Identifier">/--/</span>   Alice
+Bob <span class="Identifier">o/--/</span>  Alice
+Bob <span class="Identifier">x/--/</span>  Alice
+Bob <span class="Identifier">//-/</span>   Alice
+Bob <span class="Identifier">o//-/</span>  Alice
+Bob <span class="Identifier">x//-/</span>  Alice
+Bob <span class="Identifier">//--/</span>  Alice
+Bob <span class="Identifier">o//--/</span> Alice
+Bob <span class="Identifier">x//--/</span> Alice
 
-Bob &lt;-/o    Alice
-Bob o&lt;-/o   Alice
-Bob x&lt;-/o   Alice
-Bob &lt;--/o   Alice
-Bob o&lt;--/o  Alice
-Bob x&lt;--/o  Alice
-Bob &lt;&lt;-/o   Alice
-Bob o&lt;&lt;-/o  Alice
-Bob x&lt;&lt;-/o  Alice
-Bob &lt;&lt;--/o  Alice
-Bob o&lt;&lt;--/o Alice
-Bob x&lt;&lt;--/o Alice
-Bob \-/o    Alice
-Bob o\-/o   Alice
-Bob x\-/o   Alice
-Bob \--/o   Alice
-Bob o\--/o  Alice
-Bob x\--/o  Alice
-Bob \\-/o   Alice
-Bob o\\-/o  Alice
-Bob x\\-/o  Alice
-Bob \\--/o  Alice
-Bob o\\--/o Alice
-Bob x\\--/o Alice
-Bob /-/o    Alice
-Bob o/-/o   Alice
-Bob x/-/o   Alice
-Bob /--/o   Alice
-Bob o/--/o  Alice
-Bob x/--/o  Alice
-Bob //-/o   Alice
-Bob o//-/o  Alice
-Bob x//-/o  Alice
-Bob //--/o  Alice
-Bob o//--/o Alice
-Bob x//--/o Alice
+Bob <span class="Identifier">&lt;-/o</span>    Alice
+Bob <span class="Identifier">o&lt;-/o</span>   Alice
+Bob <span class="Identifier">x&lt;-/o</span>   Alice
+Bob <span class="Identifier">&lt;--/o</span>   Alice
+Bob <span class="Identifier">o&lt;--/o</span>  Alice
+Bob <span class="Identifier">x&lt;--/o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-/o</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-/o</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-/o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--/o</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--/o</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--/o</span> Alice
+Bob <span class="Identifier">\-/o</span>    Alice
+Bob <span class="Identifier">o\-/o</span>   Alice
+Bob <span class="Identifier">x\-/o</span>   Alice
+Bob <span class="Identifier">\--/o</span>   Alice
+Bob <span class="Identifier">o\--/o</span>  Alice
+Bob <span class="Identifier">x\--/o</span>  Alice
+Bob <span class="Identifier">\\-/o</span>   Alice
+Bob <span class="Identifier">o\\-/o</span>  Alice
+Bob <span class="Identifier">x\\-/o</span>  Alice
+Bob <span class="Identifier">\\--/o</span>  Alice
+Bob <span class="Identifier">o\\--/o</span> Alice
+Bob <span class="Identifier">x\\--/o</span> Alice
+Bob <span class="Identifier">/-/o</span>    Alice
+Bob <span class="Identifier">o/-/o</span>   Alice
+Bob <span class="Identifier">x/-/o</span>   Alice
+Bob <span class="Identifier">/--/o</span>   Alice
+Bob <span class="Identifier">o/--/o</span>  Alice
+Bob <span class="Identifier">x/--/o</span>  Alice
+Bob <span class="Identifier">//-/o</span>   Alice
+Bob <span class="Identifier">o//-/o</span>  Alice
+Bob <span class="Identifier">x//-/o</span>  Alice
+Bob <span class="Identifier">//--/o</span>  Alice
+Bob <span class="Identifier">o//--/o</span> Alice
+Bob <span class="Identifier">x//--/o</span> Alice
 
-Bob &lt;-/x    Alice
-Bob o&lt;-/x   Alice
-Bob x&lt;-/x   Alice
-Bob &lt;--/x   Alice
-Bob o&lt;--/x  Alice
-Bob x&lt;--/x  Alice
-Bob &lt;&lt;-/x   Alice
-Bob o&lt;&lt;-/x  Alice
-Bob x&lt;&lt;-/x  Alice
-Bob &lt;&lt;--/x  Alice
-Bob o&lt;&lt;--/x Alice
-Bob x&lt;&lt;--/x Alice
-Bob \-/x    Alice
-Bob o\-/x   Alice
-Bob x\-/x   Alice
-Bob \--/x   Alice
-Bob o\--/x  Alice
-Bob x\--/x  Alice
-Bob \\-/x   Alice
-Bob o\\-/x  Alice
-Bob x\\-/x  Alice
-Bob \\--/x  Alice
-Bob o\\--/x Alice
-Bob x\\--/x Alice
-Bob /-/x    Alice
-Bob o/-/x   Alice
-Bob x/-/x   Alice
-Bob /--/x   Alice
-Bob o/--/x  Alice
-Bob x/--/x  Alice
-Bob //-/x   Alice
-Bob o//-/x  Alice
-Bob x//-/x  Alice
-Bob //--/x  Alice
-Bob o//--/x Alice
-Bob x//--/x Alice
+Bob <span class="Identifier">&lt;-/x</span>    Alice
+Bob <span class="Identifier">o&lt;-/x</span>   Alice
+Bob <span class="Identifier">x&lt;-/x</span>   Alice
+Bob <span class="Identifier">&lt;--/x</span>   Alice
+Bob <span class="Identifier">o&lt;--/x</span>  Alice
+Bob <span class="Identifier">x&lt;--/x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-/x</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-/x</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-/x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--/x</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--/x</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--/x</span> Alice
+Bob <span class="Identifier">\-/x</span>    Alice
+Bob <span class="Identifier">o\-/x</span>   Alice
+Bob <span class="Identifier">x\-/x</span>   Alice
+Bob <span class="Identifier">\--/x</span>   Alice
+Bob <span class="Identifier">o\--/x</span>  Alice
+Bob <span class="Identifier">x\--/x</span>  Alice
+Bob <span class="Identifier">\\-/x</span>   Alice
+Bob <span class="Identifier">o\\-/x</span>  Alice
+Bob <span class="Identifier">x\\-/x</span>  Alice
+Bob <span class="Identifier">\\--/x</span>  Alice
+Bob <span class="Identifier">o\\--/x</span> Alice
+Bob <span class="Identifier">x\\--/x</span> Alice
+Bob <span class="Identifier">/-/x</span>    Alice
+Bob <span class="Identifier">o/-/x</span>   Alice
+Bob <span class="Identifier">x/-/x</span>   Alice
+Bob <span class="Identifier">/--/x</span>   Alice
+Bob <span class="Identifier">o/--/x</span>  Alice
+Bob <span class="Identifier">x/--/x</span>  Alice
+Bob <span class="Identifier">//-/x</span>   Alice
+Bob <span class="Identifier">o//-/x</span>  Alice
+Bob <span class="Identifier">x//-/x</span>  Alice
+Bob <span class="Identifier">//--/x</span>  Alice
+Bob <span class="Identifier">o//--/x</span> Alice
+Bob <span class="Identifier">x//--/x</span> Alice
 
-Bob &lt;-//    Alice
-Bob o&lt;-//   Alice
-Bob x&lt;-//   Alice
-Bob &lt;--//   Alice
-Bob o&lt;--//  Alice
-Bob x&lt;--//  Alice
-Bob &lt;&lt;-//   Alice
-Bob o&lt;&lt;-//  Alice
-Bob x&lt;&lt;-//  Alice
-Bob &lt;&lt;--//  Alice
-Bob o&lt;&lt;--// Alice
-Bob x&lt;&lt;--// Alice
-Bob \-//    Alice
-Bob o\-//   Alice
-Bob x\-//   Alice
-Bob \--//   Alice
-Bob o\--//  Alice
-Bob x\--//  Alice
-Bob \\-//   Alice
-Bob o\\-//  Alice
-Bob x\\-//  Alice
-Bob \\--//  Alice
-Bob o\\--// Alice
-Bob x\\--// Alice
-Bob /-//    Alice
-Bob o/-//   Alice
-Bob x/-//   Alice
-Bob /--//   Alice
-Bob o/--//  Alice
-Bob x/--//  Alice
-Bob //-//   Alice
-Bob o//-//  Alice
-Bob x//-//  Alice
-Bob //--//  Alice
-Bob o//--// Alice
-Bob x//--// Alice
+Bob <span class="Identifier">&lt;-//</span>    Alice
+Bob <span class="Identifier">o&lt;-//</span>   Alice
+Bob <span class="Identifier">x&lt;-//</span>   Alice
+Bob <span class="Identifier">&lt;--//</span>   Alice
+Bob <span class="Identifier">o&lt;--//</span>  Alice
+Bob <span class="Identifier">x&lt;--//</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-//</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-//</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-//</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--//</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--//</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--//</span> Alice
+Bob <span class="Identifier">\-//</span>    Alice
+Bob <span class="Identifier">o\-//</span>   Alice
+Bob <span class="Identifier">x\-//</span>   Alice
+Bob <span class="Identifier">\--//</span>   Alice
+Bob <span class="Identifier">o\--//</span>  Alice
+Bob <span class="Identifier">x\--//</span>  Alice
+Bob <span class="Identifier">\\-//</span>   Alice
+Bob <span class="Identifier">o\\-//</span>  Alice
+Bob <span class="Identifier">x\\-//</span>  Alice
+Bob <span class="Identifier">\\--//</span>  Alice
+Bob <span class="Identifier">o\\--//</span> Alice
+Bob <span class="Identifier">x\\--//</span> Alice
+Bob <span class="Identifier">/-//</span>    Alice
+Bob <span class="Identifier">o/-//</span>   Alice
+Bob <span class="Identifier">x/-//</span>   Alice
+Bob <span class="Identifier">/--//</span>   Alice
+Bob <span class="Identifier">o/--//</span>  Alice
+Bob <span class="Identifier">x/--//</span>  Alice
+Bob <span class="Identifier">//-//</span>   Alice
+Bob <span class="Identifier">o//-//</span>  Alice
+Bob <span class="Identifier">x//-//</span>  Alice
+Bob <span class="Identifier">//--//</span>  Alice
+Bob <span class="Identifier">o//--//</span> Alice
+Bob <span class="Identifier">x//--//</span> Alice
 
-Bob &lt;-//o    Alice
-Bob o&lt;-//o   Alice
-Bob x&lt;-//o   Alice
-Bob &lt;--//o   Alice
-Bob o&lt;--//o  Alice
-Bob x&lt;--//o  Alice
-Bob &lt;&lt;-//o   Alice
-Bob o&lt;&lt;-//o  Alice
-Bob x&lt;&lt;-//o  Alice
-Bob &lt;&lt;--//o  Alice
-Bob o&lt;&lt;--//o Alice
-Bob x&lt;&lt;--//o Alice
-Bob \-//o    Alice
-Bob o\-//o   Alice
-Bob x\-//o   Alice
-Bob \--//o   Alice
-Bob o\--//o  Alice
-Bob x\--//o  Alice
-Bob \\-//o   Alice
-Bob o\\-//o  Alice
-Bob x\\-//o  Alice
-Bob \\--//o  Alice
-Bob o\\--//o Alice
-Bob x\\--//o Alice
-Bob /-//o    Alice
-Bob o/-//o   Alice
-Bob x/-//o   Alice
-Bob /--//o   Alice
-Bob o/--//o  Alice
-Bob x/--//o  Alice
-Bob //-//o   Alice
-Bob o//-//o  Alice
-Bob x//-//o  Alice
-Bob //--//o  Alice
-Bob o//--//o Alice
-Bob x//--//o Alice
+Bob <span class="Identifier">&lt;-//o</span>    Alice
+Bob <span class="Identifier">o&lt;-//o</span>   Alice
+Bob <span class="Identifier">x&lt;-//o</span>   Alice
+Bob <span class="Identifier">&lt;--//o</span>   Alice
+Bob <span class="Identifier">o&lt;--//o</span>  Alice
+Bob <span class="Identifier">x&lt;--//o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-//o</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-//o</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-//o</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--//o</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--//o</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--//o</span> Alice
+Bob <span class="Identifier">\-//o</span>    Alice
+Bob <span class="Identifier">o\-//o</span>   Alice
+Bob <span class="Identifier">x\-//o</span>   Alice
+Bob <span class="Identifier">\--//o</span>   Alice
+Bob <span class="Identifier">o\--//o</span>  Alice
+Bob <span class="Identifier">x\--//o</span>  Alice
+Bob <span class="Identifier">\\-//o</span>   Alice
+Bob <span class="Identifier">o\\-//o</span>  Alice
+Bob <span class="Identifier">x\\-//o</span>  Alice
+Bob <span class="Identifier">\\--//o</span>  Alice
+Bob <span class="Identifier">o\\--//o</span> Alice
+Bob <span class="Identifier">x\\--//o</span> Alice
+Bob <span class="Identifier">/-//o</span>    Alice
+Bob <span class="Identifier">o/-//o</span>   Alice
+Bob <span class="Identifier">x/-//o</span>   Alice
+Bob <span class="Identifier">/--//o</span>   Alice
+Bob <span class="Identifier">o/--//o</span>  Alice
+Bob <span class="Identifier">x/--//o</span>  Alice
+Bob <span class="Identifier">//-//o</span>   Alice
+Bob <span class="Identifier">o//-//o</span>  Alice
+Bob <span class="Identifier">x//-//o</span>  Alice
+Bob <span class="Identifier">//--//o</span>  Alice
+Bob <span class="Identifier">o//--//o</span> Alice
+Bob <span class="Identifier">x//--//o</span> Alice
 
-Bob &lt;-//x    Alice
-Bob o&lt;-//x   Alice
-Bob x&lt;-//x   Alice
-Bob &lt;--//x   Alice
-Bob o&lt;--//x  Alice
-Bob x&lt;--//x  Alice
-Bob &lt;&lt;-//x   Alice
-Bob o&lt;&lt;-//x  Alice
-Bob x&lt;&lt;-//x  Alice
-Bob &lt;&lt;--//x  Alice
-Bob o&lt;&lt;--//x Alice
-Bob x&lt;&lt;--//x Alice
-Bob \-//x    Alice
-Bob o\-//x   Alice
-Bob x\-//x   Alice
-Bob \--//x   Alice
-Bob o\--//x  Alice
-Bob x\--//x  Alice
-Bob \\-//x   Alice
-Bob o\\-//x  Alice
-Bob x\\-//x  Alice
-Bob \\--//x  Alice
-Bob o\\--//x Alice
-Bob x\\--//x Alice
-Bob /-//x    Alice
-Bob o/-//x   Alice
-Bob x/-//x   Alice
-Bob /--//x   Alice
-Bob o/--//x  Alice
-Bob x/--//x  Alice
-Bob //-//x   Alice
-Bob o//-//x  Alice
-Bob x//-//x  Alice
-Bob //--//x  Alice
-Bob o//--//x Alice
-Bob x//--//x Alice
+Bob <span class="Identifier">&lt;-//x</span>    Alice
+Bob <span class="Identifier">o&lt;-//x</span>   Alice
+Bob <span class="Identifier">x&lt;-//x</span>   Alice
+Bob <span class="Identifier">&lt;--//x</span>   Alice
+Bob <span class="Identifier">o&lt;--//x</span>  Alice
+Bob <span class="Identifier">x&lt;--//x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;-//x</span>   Alice
+Bob <span class="Identifier">o&lt;&lt;-//x</span>  Alice
+Bob <span class="Identifier">x&lt;&lt;-//x</span>  Alice
+Bob <span class="Identifier">&lt;&lt;--//x</span>  Alice
+Bob <span class="Identifier">o&lt;&lt;--//x</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--//x</span> Alice
+Bob <span class="Identifier">\-//x</span>    Alice
+Bob <span class="Identifier">o\-//x</span>   Alice
+Bob <span class="Identifier">x\-//x</span>   Alice
+Bob <span class="Identifier">\--//x</span>   Alice
+Bob <span class="Identifier">o\--//x</span>  Alice
+Bob <span class="Identifier">x\--//x</span>  Alice
+Bob <span class="Identifier">\\-//x</span>   Alice
+Bob <span class="Identifier">o\\-//x</span>  Alice
+Bob <span class="Identifier">x\\-//x</span>  Alice
+Bob <span class="Identifier">\\--//x</span>  Alice
+Bob <span class="Identifier">o\\--//x</span> Alice
+Bob <span class="Identifier">x\\--//x</span> Alice
+Bob <span class="Identifier">/-//x</span>    Alice
+Bob <span class="Identifier">o/-//x</span>   Alice
+Bob <span class="Identifier">x/-//x</span>   Alice
+Bob <span class="Identifier">/--//x</span>   Alice
+Bob <span class="Identifier">o/--//x</span>  Alice
+Bob <span class="Identifier">x/--//x</span>  Alice
+Bob <span class="Identifier">//-//x</span>   Alice
+Bob <span class="Identifier">o//-//x</span>  Alice
+Bob <span class="Identifier">x//-//x</span>  Alice
+Bob <span class="Identifier">//--//x</span>  Alice
+Bob <span class="Identifier">o//--//x</span> Alice
+Bob <span class="Identifier">x//--//x</span> Alice
 
-@enduml
+<span class="PreProc">@enduml</span>
 </pre>
 </td><td>
 <img src="uml/Arrows_both.png" />
@@ -957,44 +957,44 @@ Bob x//--//x Alice
 <h2>uml/Arrows_LR</h2>
 <pre id='vimCodeElement'>
 
-@startuml
-Bob -&gt; Alice
-Bob -&gt;o Alice
-Bob -&gt;x Alice
-Bob --&gt; Alice
-Bob --&gt;o Alice
-Bob --&gt;x Alice
-Bob -&gt;&gt; Alice
-Bob -&gt;&gt;o Alice
-Bob -&gt;&gt;x Alice
-Bob --&gt;&gt; Alice
-Bob --&gt;&gt;o Alice
-Bob --&gt;&gt;x Alice
-Bob -\ Alice
-Bob -\o Alice
-Bob -\x Alice
-Bob --\ Alice
-Bob --\o Alice
-Bob --\x Alice
-Bob -\\ Alice
-Bob -\\o Alice
-Bob -\\x Alice
-Bob --\\ Alice
-Bob --\\o Alice
-Bob --\\x Alice
-Bob -/ Alice
-Bob -/o Alice
-Bob -/x Alice
-Bob --/ Alice
-Bob --/o Alice
-Bob --/x Alice
-Bob -// Alice
-Bob -//o Alice
-Bob -//x Alice
-Bob --// Alice
-Bob --//o Alice
-Bob --//x Alice
-@enduml
+<span class="PreProc">@startuml</span>
+Bob <span class="Identifier">-&gt;</span> Alice
+Bob <span class="Identifier">-&gt;o</span> Alice
+Bob <span class="Identifier">-&gt;x</span> Alice
+Bob <span class="Identifier">--&gt;</span> Alice
+Bob <span class="Identifier">--&gt;o</span> Alice
+Bob <span class="Identifier">--&gt;x</span> Alice
+Bob <span class="Identifier">-&gt;&gt;</span> Alice
+Bob <span class="Identifier">-&gt;&gt;o</span> Alice
+Bob <span class="Identifier">-&gt;&gt;x</span> Alice
+Bob <span class="Identifier">--&gt;&gt;</span> Alice
+Bob <span class="Identifier">--&gt;&gt;o</span> Alice
+Bob <span class="Identifier">--&gt;&gt;x</span> Alice
+Bob <span class="Identifier">-\</span> Alice
+Bob <span class="Identifier">-\o</span> Alice
+Bob <span class="Identifier">-\x</span> Alice
+Bob <span class="Identifier">--\</span> Alice
+Bob <span class="Identifier">--\o</span> Alice
+Bob <span class="Identifier">--\x</span> Alice
+Bob <span class="Identifier">-\\</span> Alice
+Bob <span class="Identifier">-\\o</span> Alice
+Bob <span class="Identifier">-\\x</span> Alice
+Bob <span class="Identifier">--\\</span> Alice
+Bob <span class="Identifier">--\\o</span> Alice
+Bob <span class="Identifier">--\\x</span> Alice
+Bob <span class="Identifier">-/</span> Alice
+Bob <span class="Identifier">-/o</span> Alice
+Bob <span class="Identifier">-/x</span> Alice
+Bob <span class="Identifier">--/</span> Alice
+Bob <span class="Identifier">--/o</span> Alice
+Bob <span class="Identifier">--/x</span> Alice
+Bob <span class="Identifier">-//</span> Alice
+Bob <span class="Identifier">-//o</span> Alice
+Bob <span class="Identifier">-//x</span> Alice
+Bob <span class="Identifier">--//</span> Alice
+Bob <span class="Identifier">--//o</span> Alice
+Bob <span class="Identifier">--//x</span> Alice
+<span class="PreProc">@enduml</span>
 </pre>
 </td><td>
 <img src="uml/Arrows_LR.png" />
@@ -1004,44 +1004,44 @@ Bob --//x Alice
 <h2>uml/Arrows_RL</h2>
 <pre id='vimCodeElement'>
 
-@startuml
-Bob &lt;- Alice
-Bob o&lt;- Alice
-Bob x&lt;- Alice
-Bob &lt;-- Alice
-Bob o&lt;-- Alice
-Bob x&lt;-- Alice
-Bob &lt;&lt;- Alice
-Bob o&lt;&lt;- Alice
-Bob x&lt;&lt;- Alice
-Bob &lt;&lt;-- Alice
-Bob o&lt;&lt;-- Alice
-Bob x&lt;&lt;-- Alice
-Bob \- Alice
-Bob o\- Alice
-Bob x\- Alice
-Bob \-- Alice
-Bob o\-- Alice
-Bob x\-- Alice
-Bob \\- Alice
-Bob o\\- Alice
-Bob x\\- Alice
-Bob \\-- Alice
-Bob o\\-- Alice
-Bob x\\-- Alice
-Bob /- Alice
-Bob o/- Alice
-Bob x/- Alice
-Bob /-- Alice
-Bob o/-- Alice
-Bob x/-- Alice
-Bob //- Alice
-Bob o//- Alice
-Bob x//- Alice
-Bob //-- Alice
-Bob o//-- Alice
-Bob x//-- Alice
-@enduml
+<span class="PreProc">@startuml</span>
+Bob <span class="Identifier">&lt;-</span> Alice
+Bob <span class="Identifier">o&lt;-</span> Alice
+Bob <span class="Identifier">x&lt;-</span> Alice
+Bob <span class="Identifier">&lt;--</span> Alice
+Bob <span class="Identifier">o&lt;--</span> Alice
+Bob <span class="Identifier">x&lt;--</span> Alice
+Bob <span class="Identifier">&lt;&lt;-</span> Alice
+Bob <span class="Identifier">o&lt;&lt;-</span> Alice
+Bob <span class="Identifier">x&lt;&lt;-</span> Alice
+Bob <span class="Identifier">&lt;&lt;--</span> Alice
+Bob <span class="Identifier">o&lt;&lt;--</span> Alice
+Bob <span class="Identifier">x&lt;&lt;--</span> Alice
+Bob <span class="Identifier">\-</span> Alice
+Bob <span class="Identifier">o\-</span> Alice
+Bob <span class="Identifier">x\-</span> Alice
+Bob <span class="Identifier">\--</span> Alice
+Bob <span class="Identifier">o\--</span> Alice
+Bob <span class="Identifier">x\--</span> Alice
+Bob <span class="Identifier">\\-</span> Alice
+Bob <span class="Identifier">o\\-</span> Alice
+Bob <span class="Identifier">x\\-</span> Alice
+Bob <span class="Identifier">\\--</span> Alice
+Bob <span class="Identifier">o\\--</span> Alice
+Bob <span class="Identifier">x\\--</span> Alice
+Bob <span class="Identifier">/-</span> Alice
+Bob <span class="Identifier">o/-</span> Alice
+Bob <span class="Identifier">x/-</span> Alice
+Bob <span class="Identifier">/--</span> Alice
+Bob <span class="Identifier">o/--</span> Alice
+Bob <span class="Identifier">x/--</span> Alice
+Bob <span class="Identifier">//-</span> Alice
+Bob <span class="Identifier">o//-</span> Alice
+Bob <span class="Identifier">x//-</span> Alice
+Bob <span class="Identifier">//--</span> Alice
+Bob <span class="Identifier">o//--</span> Alice
+Bob <span class="Identifier">x//--</span> Alice
+<span class="PreProc">@enduml</span>
 </pre>
 </td><td>
 <img src="uml/Arrows_RL.png" />
@@ -1051,50 +1051,50 @@ Bob x//-- Alice
 <h2>uml/class</h2>
 <pre id='vimCodeElement'>
 
-@startuml
+<span class="PreProc">@startuml</span>
 
-class Foo &lt;&lt;Bar&gt;&gt; {
-    You can use
-    several lines
-    ..
-    As you want
-    and group
-    ==
-    things together.
-    --
-    You can have as many
-    groups as you want.
-    --
-    +publicMethod()
-    -privateMethod()
-    #protectedMethod()
-    End of class
-}
+<span class="Statement">class</span> Foo <span class="Type">&lt;&lt;Bar&gt;&gt;</span> <span class="Type">{</span>
+<span class="Type">    You can use</span>
+<span class="Type">    several lines</span>
+<span class="Type">    </span><span class="Comment">..</span>
+<span class="Type">    As you want</span>
+<span class="Type">    and group</span>
+<span class="Type">    </span><span class="Comment">==</span>
+<span class="Type">    things together.</span>
+<span class="Type">    </span><span class="Comment">--</span>
+<span class="Type">    You can have as many</span>
+<span class="Type">    groups as you want.</span>
+<span class="Type">    </span><span class="Comment">--</span>
+<span class="Type">    +publicMethod</span><span class="Type">()</span>
+<span class="PreProc">    -privateMethod</span><span class="Type">()</span>
+<span class="Statement">    #protectedMethod</span><span class="Type">()</span>
+<span class="Type">    End of </span><span class="Statement">class</span>
+<span class="Type">}</span>
 
-class Bar {
-    note: This is a class
-    .. Hello foo ..
-    +public
-    .. Private things prefixed with - ..
-    -private
-    #protected
-    int foo
-    String password
-}
+<span class="Statement">class</span> Bar <span class="Type">{ </span>
+<span class="Type">    note: This is a </span><span class="Statement">class</span>
+<span class="Type">    </span><span class="Comment">.. Hello foo ..</span>
+<span class="Type">    +public</span>
+<span class="Type">    </span><span class="Comment">.. Private things prefixed with - ..</span>
+<span class="PreProc">    -private</span>
+<span class="Statement">    #protected</span>
+<span class="Type">    int foo</span>
+<span class="Type">    String password</span>
+<span class="Type">}</span>
 
-interface IBar {
-    int a
-    int b
-    --
-    +public()
-    -private()
-}
+<span class="Statement">interface</span> IBar <span class="Type">{</span>
+<span class="Type">    int a</span>
+<span class="Type">    int b</span>
+<span class="Type">    </span><span class="Comment">--</span>
+<span class="Type">    +public</span><span class="Type">()</span>
+<span class="PreProc">    -private</span><span class="Type">()</span>
+<span class="Type">}</span>
 
-Foo --&gt; Bar
-IBar --&gt; Foo
-IBar --&gt; Bar
+Foo <span class="Identifier">--&gt;</span> Bar
+IBar <span class="Identifier">--&gt;</span> Foo
+IBar <span class="Identifier">--&gt;</span> Bar
 
-@enduml
+<span class="PreProc">@enduml</span>
 </pre>
 </td><td>
 <img src="uml/class.png" />
@@ -1104,54 +1104,54 @@ IBar --&gt; Bar
 <h2>uml/object</h2>
 <pre id='vimCodeElement'>
 
-@startuml
+<span class="PreProc">@startuml</span>
 
-title Objects and Interfaces
+<span class="Statement">title</span> Objects <span class="Statement">and</span> Interfaces
 
-interface Zzapper &lt;&lt;FooFoo&gt;&gt;  {
-  +publicAbc()
-  #protectedAbc()
-}
+<span class="Statement">interface</span> Zzapper <span class="Type">&lt;&lt;FooFoo&gt;&gt;</span>  <span class="Type">{</span>
+<span class="Type">  +publicAbc</span><span class="Type">()</span>
+<span class="Statement">  #protectedAbc</span><span class="Type">()</span>
+<span class="Type">}</span>
 
-object Zzap {
-  int a
-  int b
-  --
-  +publicAbc()
-  #protectedAbc()
-  -privateAbc()
-  note: This is an object
-  ==
-  note: here is a loop
-}
+<span class="Type">object</span> Zzap <span class="Type">{</span>
+<span class="Type">  int a</span>
+<span class="Type">  int b</span>
+<span class="Type">  </span><span class="Comment">--</span>
+<span class="Type">  +publicAbc</span><span class="Type">()</span>
+<span class="Statement">  #protectedAbc</span><span class="Type">()</span>
+<span class="PreProc">  -privateAbc</span><span class="Type">()</span>
+<span class="Type">  note: This is an object</span>
+<span class="Type">  </span><span class="Comment">==</span>
+<span class="Type">  note: here is a loop</span>
+<span class="Type">}</span>
 
-object User {
-  name = &quot;dummy&quot;
-  id = 123
-  --
-  +userJump(int length)
-  +userEat(Food food)
-}
+<span class="Type">object</span> User <span class="Type">{</span>
+<span class="Type">  name = &quot;dummy&quot;</span>
+<span class="Type">  id = 123</span>
+<span class="Type">  </span><span class="Comment">--</span>
+<span class="Type">  +userJump</span><span class="Type">(int length)</span>
+<span class="Type">  +userEat</span><span class="Type">(Food food)</span>
+<span class="Type">}</span>
 
-object Food {
-  int calories
-  string name
-}
+<span class="Type">object</span> Food <span class="Type">{</span>
+<span class="Type">  int calories</span>
+<span class="Type">  string name</span>
+<span class="Type">}</span>
 
-object Store {
-  name = &quot;superCat&quot;
-  id = 347
-}
+<span class="Type">object</span> Store <span class="Type">{</span>
+<span class="Type">  name = &quot;superCat&quot;</span>
+<span class="Type">  id = 347</span>
+<span class="Type">}</span>
 
-Zzapper --&gt; Zzap
+Zzapper <span class="Identifier">--&gt;</span> Zzap
 
-User --|&gt; Store
-User --|&gt; Zzap
+User <span class="Identifier">--|&gt;</span> Store
+User <span class="Identifier">--|&gt;</span> Zzap
 
-Food --* User
-Food --o Store
+Food <span class="Identifier">--*</span> User
+Food <span class="Identifier">--o</span> Store
 
-@enduml
+<span class="PreProc">@enduml</span>
 </pre>
 </td><td>
 <img src="uml/object.png" />
@@ -1161,12 +1161,12 @@ Food --o Store
 <h2>uml/reference_01-01-1</h2>
 <pre id='vimCodeElement'>
 
-@startuml
-Alice -&gt; Bob: Authentication Request
-Bob --&gt; Alice: Authentication Response
-Alice -&gt; Bob: Another authentication Request
-Alice &lt;-- Bob: another authentication Response
-@enduml
+<span class="PreProc">@startuml</span>
+Alice <span class="Identifier">-&gt;</span> Bob: Authentication Request
+Bob <span class="Identifier">--&gt;</span> Alice: Authentication Response
+Alice <span class="Identifier">-&gt;</span> Bob: Another authentication Request
+Alice <span class="Identifier">&lt;--</span> Bob: another authentication Response
+<span class="PreProc">@enduml</span>
 </pre>
 </td><td>
 <img src="uml/reference_01-01-1.png" />
