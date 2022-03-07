@@ -1,12 +1,20 @@
+.
+..
+...
+....
 .BaseClass <span class="Identifier">&lt;|-</span> Meeting
 .BaseClass <span class="Identifier">&lt;|--</span> Person
+. | Column 2 | Column 3
 .Comment { color: #00ffff; }
 .Constant { color: #ff40ff; }
 .Directory { color: #afffff; }
 .Identifier { color: #00ffff; font-weight: bold; }
+.ModeMsg { font-weight: bold; }
 .MoreMsg { color: #87ffaf; }
+..My title..
 .PreProc { color: #5fd7ff; }
 .Special { color: #ffd7d7; }
 .Statement { color: #ffff00; }
+...time passes...
 .Type { color: #87ffaf; }
 .WarningMsg { color: #ffd7d7; }
